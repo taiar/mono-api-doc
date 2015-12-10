@@ -1,0 +1,58 @@
+%Observação importante: para usar os recursos da classe ABNTEX, é necessário fazer o download de sua biblioteca,
+%visto que a mesma não é nativa do ambiente \LaTeX.
+%Em um distribuição linux baseada em debian o pacote pode ser instalado pelo comando: sudo apt-get install abntex.
+%Autor:Jean Henrique Ferreira Freire
+
+\documentclass{abnt}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[num]{abntcite}
+\usepackage{graphicx}
+\usepackage{url}
+
+\begin{document}
+\autor{Aluno mais aplicado do mundo}
+
+\titulo{Um sistema muito bonito}
+
+\orientador[Orientadores:\\]{YY - Departamento de Engenharia Elétrica}
+
+\coorientador{XX - Departamento de Ciência da Computação}
+
+
+\comentario{Apresentado como requisito da disciplina de Monografia em Sistemas de Informação do DCC/UFMG}
+
+\instituicao{Universidade Federal de Minas Gerais \par Instituto de Ciências
+Exatas \par Departamento de Ciência da Computação}
+
+\local{Belo Horizonte} \data{2013/1}
+
+\capa 
+\folhaderosto 
+
+
+\begin{resumo}
+Coloque aqui seu resumo.\\
+
+
+\textbf{Palavras-chaves}: palavras, chave. 
+\end{resumo}
+
+\sumario %comando que gera o sumário automaticamente
+\renewcommand*\listfigurename{LISTA DE FIGURAS}
+\listoffigures %comando que gera um sumário para a lista de figuras do texto automaticamente
+
+
+
+\chapter{INTRODUÇÃO}
+
+ja dizia \cite{Taiar2015}
+
+\chapter{CONTEXTUALIZAÇÃO E TRABALHOS RELACIONADOS}
+\chapter{DESENVOLVIMENTO DO TRABALHO}
+\chapter{RESULTADOS E DISCUSSÃO}
+\chapter{CONCLUSÕES E TRABALHO FUTUROS}
+
+\bibliography{teste}
+
+\end{document}
