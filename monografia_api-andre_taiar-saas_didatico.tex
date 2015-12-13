@@ -328,8 +328,31 @@ planejamento.
 
 \section{Proposta e projeto do sistema}
 
-% relacionar ferramentas utilizadas e tecnologia
-% explicar a aplicação da metodologia
+Para o sistema proposto, foi escolhido que se usaria uma arquitetura chamada MVC
+(Modelo-visão-controlador) \cite{patternMVC}. Este padrão de arquitetura
+organiza o sistema em três componentes:
+
+\begin{itemize}
+	\item Modelo: contém as funcionalidades e dados principais;
+	\item Visão:  responsável por apresentar os dados ao usuário;
+	\item Controlador: trata os eventos de entrada.
+\end{itemize}
+
+O MVC separa a apresentação e a interação dos dados do sistema aonde os três
+componentes tem responsabilidades distintas mas interagem entre si. Esta
+arquitetura é recomendada quando existem várias maneiras de visualizar e
+interagir com os dados e são desconhecidos (ou são voláteis) os requisitos de
+interação com os dados. Como vantagem, essa arquitetura permite que os dados
+sejam alterados de forma independente de sua representação (e vice versa)  
+\cite{patternMVC}. Um diagrama de arquitetura referente ao padrão MVC pode ser
+visto na figura \ref{MVCC}.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=350px]{mvc.pdf}
+	\caption{Padrão de Arquitetura MVC}
+	\label{MVCC}
+\end{figure}
 
 \section{Desenvolvimento do projeto}
 
@@ -343,23 +366,32 @@ planejamento.
 
 \chapter{CONCLUSÕES E TRABALHO FUTUROS}
 
-O projeto de interação entre os módulos do sistema demonstrou-se com o tempo ser
+O projeto de interação entre os módulos do sistema, de forma que resultados
+obtidos do processamento dos dados informados para módulos de etapas iniciais do
+projeto fossem utilizados como dados de entrada para módulos mais
+posteriores na utilização da plataforma, demonstrou-se com o tempo ser
 extremamente mais oneroso do que o que foi estimado no início do projeto. Também
 é visível que o plano inicial de desenvolver muitos módulos e ferramentas de
 gestão seria inviável ao longo de um semestre letivo. Neste ponto, a metodologia
-ágil que foi escolhida para gerenciamento do projeto ajudou a refinar as tarefas
-que existiam no \textit{backlog} do projeto, priorizando o que provavelmente
-daria mais visibilidade ao projeto e que poderia ser relevante no contexto de um
-sistema de gestão estratégica: o módulo de \textit{Balanced Scorecard}.
+ágil que foi escolhida para gerenciamento do projeto ajudou a equipe a refinar
+as os requisitos que existiam no \textit{backlog} do produto, priorizando o que
+provavelmente agregaria mais valor ao projeto em um curto prazo e que poderia
+ser relevante no contexto de um sistema de gestão estratégica: o módulo de
+\textit{Balanced Scorecard}.
 
-% TODO: falta algum elemento intermediário
+A ferramenta de \textit{Balanced Scorecard} tem um papel bastante importante no
+desenvolvimento desta solução pois sempre dá a visão geral das metas da
+organização, de como elas estão se desenvolvendo e se o cronograma definido está
+sendo cumprido. Por isso, foi eleita a ferramenta que teria a maior atenção,
+maior detalhamento e maior ênfase no início do desenvolvimento do sistema.
 
 Um produto mínimo viável como o que foi idealizado nesse trabalho parece ter um
-potencial de crescimento muito grande. Como visto, o fluxo do projeto idealizado
-foi muito grande em relação ao o que consegui desenvolver ao longo de um
-semestre letivo. Por se tratar de um projeto com um certo apelo comercial,
-pretendo continuar desenvolvendo o produto e investir mais esforço na produção
-de um sistema mais completo.
+potencial de crescimento muito grande. Por se tratar de um projeto com um certo
+apelo comercial, pretendo continuar desenvolvendo o produto e investir mais
+esforço na produção de um sistema completo. O objetivo contínuo sempre será
+combinar requisitos neste produto e chegar o mais perto possível do Produto
+Mínimo Viável, aonde partiremos para a monetização e comercialização dessa
+solução.
 
 
 \bibliography{bibliog}
