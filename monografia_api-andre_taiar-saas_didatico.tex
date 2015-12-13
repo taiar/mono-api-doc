@@ -363,11 +363,35 @@ prototipação e validação da ferramenta, foi utilizado um fluxo de entrega
 contínua. Neste fluxo de desenvolvimento, cada nova funcionalidade agregada à
 solução é publicada e implantada num ambiente de homologação e imediatamente
 disponibilizada para validação. Para atender a este fluxo foi utilizado o
-servidor cloud Heroku \cite{Heroku}.
+servidor cloud Heroku \cite{Heroku}. O ambiente de homologação da solução pode
+ser acessado em \url{https://apiweb.herokuapp.com/}.
 
 \chapter{RESULTADOS E DISCUSSÃO}
 
+O pilar mais importante na proposta deste trabalho, tanto pelo seu caráter
+inovador quanto pela importância crítica que ele tem no produto final, é a
+integração das ferramentas com as informações geradas pelos diferentes módulos
+do sistema. Esta modelagem se mostrou extremamente complexa. 
 
+Foi altamente complicado especificar módulos desconexos do sistema sem uma
+experiência prévia na utilização dos mesmos. Quando partimos para uma abordagem
+aonde os módulos se comunicam o problema parece aumentar exponencialmente.
+Muitos conceitos tiveram que ser pensados afim de preencher as lacunas entre a
+integração dos módulos e a adaptação das informações que eles compartilhariam.
+
+Creio que algum estudo referente à padrões de arquitetura de software
+empresarial deva ajudar a vislumbrar uma melhor solução, apoiando-a sobre o
+aspecto técnico muito mais do que sobre o aspecto teórico do modelo. Não houve
+tempo suficiente para a elaboração dessa pesquisa neste trabalho. 
+
+Desta forma o tempo foi mesmo investido na especificação dos módulos
+individualmente, na modelagem alto-nível da integração entre eles e o
+desenvolvimento de apenas uma das várias ferramentas mencionadas na sessão 
+\ref{ferramentas}, o \textit{Balanced Scorecard}. A implementação desta
+ferramenta foi também parcial e não atendeu à toda a especificação definida para
+ela. Ainda faltaram algumas histórias de usuários que compunham toda a solução
+no backlog e que ainda não conseguiram ser desenvolvidas. As funcionalidades e
+todas as regras desta ferramenta se mostraram realmente complexas.
 
 \chapter{CONCLUSÕES E TRABALHO FUTUROS}
 
